@@ -2,6 +2,7 @@ var Item = require('./item')
 function RestockerTest() {
 }
 
+module.exports =  RestockerTest;
 
 RestockerTest.prototype.addList =
 function(warehouse) {

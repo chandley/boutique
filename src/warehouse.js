@@ -1,4 +1,3 @@
-var Item = require('./item')
 function Warehouse () {
   this.stock = []; 
 }
@@ -16,9 +15,3 @@ function(item) {
   this.stock.splice(index, 1);
 };
 
-Warehouse.prototype.addList =
-function() {
-  var first = new Item('Almond Toe Court Shoes, Patent Black',99)
-  this.add(first);
-  this.add( new Item ('Blazer',175));
-};
