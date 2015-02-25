@@ -3,9 +3,9 @@ describe('homepage', function(){
     casper.start('http://localhost:3000/');
   });
 
-  it('hello worlds', function(){
+  it('gives a welcome message', function(){
     casper.then(function(){
-      expect("body").to.include.text("Hello world");
+      expect("body").to.include.text("Welcome to the boutique");
     });
   });
 
