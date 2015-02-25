@@ -2,13 +2,30 @@
   "name": "Boutique",
   "version": "1.0.0",
   "description": "Web shopping page",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "node_modules/jasmine-node/bin/jasmine-node spec/ --verbose"
   },
   "author": "Chris Handley",
   "license": "ISC",
   "devDependencies": {
-    "jasmine-node": "^1.14.5"
+    "casper-chai": "^0.2.1",
+    "casperjs": "^1.1.0-beta3",
+    "chai": "^2.1.0",
+    "grunt": "^0.4.5",
+    "grunt-contrib-jasmine": "^0.8.2",
+    "grunt-contrib-jshint": "^0.11.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-express-server": "^0.4.19",
+    "grunt-jasmine-node": "^0.2.1",
+    "grunt-mocha-casperjs": "^1.4.1",
+    "grunt-template-jasmine-requirejs": "^0.2.0",
+    "jasmine-node": "^1.14.5",
+    "mocha": "^2.1.0",
+    "mocha-casperjs": "^0.5.3",
+    "phantomjs": "^1.9.15"
+  },
+  "dependencies": {
+    "express": "^4.12.0"
   }
 }
