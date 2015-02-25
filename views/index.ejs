@@ -1,13 +1,26 @@
+
 <html>
   <head>
+    <style>
+      table, th, td { border: 1px solid black; }
+    </style>
   </head>
   <body>
     <h1>Welcome to the boutique</h1>
-    <ul>
+    <table style="width:100%" >
+      <tr>
+        <th>Product Name</th>
+        <th>Category</th>
+        <th>Price</th>
+        <th>Quantity in Stock</th>
+      </tr>
       <% for(var i=0; i<stock.length; i++) { %>
-        <li>
-          <%= stock[i].description %>
-        </li>
+        <tr>
+           <td><%= stock[i].description %></td>
+           <td><%= stock[i].category%></td>
+           <td><%= stock[i].price%></td>
+           <td><%= stock[i].quantity%></td>
+        </tr>
       <% } %>
     </ul>
   </body>
