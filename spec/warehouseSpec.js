@@ -29,5 +29,11 @@ describe("Warehouse", function() {
      expect(warehouse.stock.length).toEqual(2);
    });
    
+   xit("shows two of the same item as quantity two", function() {
+     warehouse.add('item')
+     warehouse.add('item')
+     expect(warehouse.stock[0].quantity).toEqual('2')
+   });
+   
 });  
 

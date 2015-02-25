@@ -15,3 +15,4 @@ function(item) {
   this.stock.splice(index, 1);
 };
 
+

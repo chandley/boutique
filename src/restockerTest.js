@@ -9,7 +9,7 @@ function(warehouse) {
   warehouse.add( { description: 'Almond Toe Court Shoes, Patent Black', 
                    price: '99',
                    category: 'Women\'s Footwear',
-                   quantity: '5'
+                   quantity: '1'
                  });
   warehouse.add( { description: 'Blazer', 
                    price: '175',
