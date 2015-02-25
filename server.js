@@ -12,8 +12,10 @@ app.get('/', function(request, response){
  
   var warehouse = new Warehouse();
   var shoes = new Item('shoes',10);
+  var belt = new Item('belt',5);
   warehouse.add(shoes);
-  response.render("index",{ stock: warehouse.stock[0].description });
+  warehouse.add(belt);
+  response.render("index",{ stock: warehouse.stock });
 });
 
 server.listen(3000, function(){

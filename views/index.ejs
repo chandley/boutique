@@ -3,6 +3,12 @@
   </head>
   <body>
     <h1>Welcome to the boutique</h1>
-    <%= stock %>
+    <ul>
+      <% for(var i=0; i<stock.length; i++) { %>
+        <li>
+          <%= stock[i].description %>
+        </li>
+      <% } %>
+    </ul>
   </body>
 </html>
