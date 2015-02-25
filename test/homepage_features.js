@@ -9,4 +9,10 @@ describe('homepage', function(){
     });
   });
 
+  it("shows some item information", function() {
+     casper.then(function(){
+       expect("body").to.include.text("shoes")
+    });
+  });  
+
 });
