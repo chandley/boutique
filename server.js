@@ -13,7 +13,7 @@ app.get('/', function(request, response){
   var warehouse = new Warehouse();
   var shoes = new Item('shoes',10);
   warehouse.add(shoes);
-  response.render("index",{ item: warehouse.stock.first } );
+  response.render("index",{ stock: warehouse.stock[0].description });
 });
 
 server.listen(3000, function(){

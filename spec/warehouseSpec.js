@@ -23,6 +23,11 @@ describe("Warehouse", function() {
     expect(warehouse.stock).toEqual([]);
   });
   
-  
+   it("can give a stock list", function() {
+     warehouse.add('item')
+     warehouse.add('another item')
+     expect(warehouse.stock.length).toEqual(2);
+   });
+   
 });  
 
