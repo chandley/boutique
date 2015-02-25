@@ -6,6 +6,14 @@ module.exports =  RestockerTest;
 
 RestockerTest.prototype.addList =
 function(warehouse) {
-  warehouse.add( new Item ('Almond Toe Court Shoes, Patent Black',99) );
-  warehouse.add( new Item ('Blazer',175));
+  warehouse.add( { description: 'Almond Toe Court Shoes, Patent Black', 
+                   price: '99',
+                   category: 'Women\'s Footwear',
+                   quantity: '5'
+                 });
+  warehouse.add( { description: 'Blazer', 
+                   price: '175',
+                   category: 'Men\'s Formalwear',
+                   quantity: '1'
+                 });
   };
